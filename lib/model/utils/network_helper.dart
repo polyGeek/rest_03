@@ -5,6 +5,8 @@ import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'package:rest_03/model/utils/eol.dart';
 
+
+
 class NetworkHelper {
 
 	static const String API_PATH 					= 'https://runpee.net/flutter/food/';
