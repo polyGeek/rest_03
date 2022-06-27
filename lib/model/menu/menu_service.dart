@@ -1,6 +1,6 @@
 
-import 'package:restaurant_menu_2/model/utils/eol.dart';
-import 'package:restaurant_menu_2/model/utils/network_helper.dart';
+import 'package:rest_03/model/utils/eol.dart';
+import 'package:rest_03/model/utils/network_helper.dart';
 
 class MenuService {
   static final MenuService _menuService = MenuService._internal();

@@ -2,9 +2,8 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:restaurant_menu_2/model/menu/menu_vo.dart';
-import 'package:restaurant_menu_2/model/utils/eol.dart';
 import 'package:http/http.dart' as http;
+import 'package:rest_03/model/utils/eol.dart';
 
 class NetworkHelper {
 

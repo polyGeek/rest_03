@@ -1,7 +1,7 @@
 
 import 'dart:convert';
 
-import 'package:restaurant_menu_2/model/utils/eol.dart';
+import 'package:rest_03/model/utils/eol.dart';
 
 class MenuVO {
 
