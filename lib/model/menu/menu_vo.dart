@@ -35,6 +35,8 @@ class MenuVO {
     required String jsonListName,
     required String result } ) {
 
+    _log(msg: jsonListName.toString() );
+
     List<dynamic> jsonList = jsonDecode( result )[ jsonListName ] as List;
     List<MenuVO> voList = [];
 
@@ -53,7 +55,7 @@ class MenuVO {
   }
 
   static const bool 		isDebug 	= true;
-  static void _log( { required String msg, bool isJson=false, bool shout=false, bool fail=false } ) {
+  static void _log( { required String msg, bool shout=false, bool fail=false } ) {
     if( isDebug ) {
       EOL.log(
         msg: msg,

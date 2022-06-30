@@ -67,10 +67,10 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "206091e2881c2ea3bee120553a0406014d6f9fae"
+      resolved-ref: f730ba44925456b103455fa9d688bac2131962f8
       url: "https://github.com/polyGeek/flutter_lint_rules"
     source: git
-    version: "1.0.1"
+    version: "1.0.2"
   flutter_test:
     dependency: "direct dev"
     description: flutter

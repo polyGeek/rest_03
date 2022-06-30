@@ -3,7 +3,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:rest_03/model/menu/menu_controller.dart';
 import 'package:rest_03/model/utils/network_helper.dart';
-import 'widgets/loading.dart';
+import 'package:rest_03/widgets/loading.dart';
+
 
 void main() {
   runApp( MyApp() );
@@ -15,9 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData.dark(),
       home: MyHomePage(),
     );
   }

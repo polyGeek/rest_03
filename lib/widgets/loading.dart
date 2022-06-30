@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../model/utils/network_helper.dart';
+import 'package:rest_03/model/utils/network_helper.dart';
+
 
 
 class Loading extends StatelessWidget {
