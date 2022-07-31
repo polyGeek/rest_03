@@ -1,8 +1,5 @@
-/// 2022-06-29
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:rest_03/model/menu/menu_controller.dart';
-import 'package:rest_03/model/utils/network_helper.dart';
 import 'package:rest_03/widgets/loading.dart';
 
 
@@ -17,6 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
+      debugShowCheckedModeBanner: false,
       home: MyHomePage(),
     );
   }
@@ -35,8 +33,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-
-    HttpOverrides.global = MyHttpOverrides();
 
     /// Call the loadMenu method. The code in that method can't be added directly here
     /// because it's async and the initState() can't be an async method.
@@ -79,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: const Align(alignment: Alignment.bottomCenter,
           child: Text(
-              'Dinner Menu 2',
+              'Dinner Menu',
               textAlign: TextAlign.center
           ),
         ),

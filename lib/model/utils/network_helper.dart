@@ -1,7 +1,5 @@
 import 'dart:async';
 import 'dart:convert';
-import 'dart:io';
-
 import 'package:http/http.dart' as http;
 import 'package:rest_03/model/utils/eol.dart';
 
@@ -139,35 +137,4 @@ class NetworkHelper {
       );
     }
   }
-
-
-	/*static List<MenuVO> convertJsonToList( {
-		required String jsonListName,
-		required String result } ) {
-
-		List<dynamic> jsonList = jsonDecode( result )[ jsonListName ] as List;
-		List<MenuVO> menuVOList = [];
-
-		if( jsonList.isNotEmpty ) {
-
-			jsonList.forEach((e) {
-				menuVOList.add(
-						MenuVO.fromJson(e)
-				);
-			});
-		} else {
-			_log(msg: 'jsonListName :' + jsonListName, fail: true );
-		}
-
-		return menuVOList;
-	}*/
-
-}
-
-class MyHttpOverrides extends HttpOverrides{
-	@override
-	HttpClient createHttpClient(SecurityContext? context){
-		return super.createHttpClient(context)
-			..badCertificateCallback = (X509Certificate cert, String host, int port)=> true;
-	}
 }
